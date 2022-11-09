@@ -1,5 +1,7 @@
 import Main from "../../Layout/Main";
 import Blog from "../../pages/Blog/Blog";
+import CardDetails from "../../pages/CardDetails/CardDetails";
+import Review from "../../pages/CardDetails/Review";
 import Home from "../../pages/Home/Home/Home";
 import Services from "../../pages/Services/Services";
 
@@ -24,7 +26,21 @@ const router = createBrowserRouter([
                 loader: async () => {
                     return fetch("http://localhost:5000/services")
                 }
-            }
+            },
+            {
+                path: '/services/:id',
+                element: <CardDetails></CardDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                children: [
+                    {
+                        path: '/services/:id',
+                        element: <Review></Review>,
+                        loader: ({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`),
+                    }
+                ]
+            },
+
+
         ]
     }
 ]);

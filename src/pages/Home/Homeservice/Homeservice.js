@@ -11,7 +11,7 @@ const Homeservice = () => {
     }, [])
     return (
         <div className='my-10'>
-            <h1 className='text-4xl text-semibold text-center text-orange-600 my-5'> Services</h1>
+            <h1 className='text-4xl text-semibold text-center text-orange-600 font-bold my-5'> Services</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 my-10'>
                 {
                     services.map(service => <Card key={service._id} service={service}></Card>)
@@ -20,7 +20,7 @@ const Homeservice = () => {
             </div>
 
             <div className="flex justify-center my-20">
-                <Link to={"/services"}><button className="btn btn-primary">See All</button></Link>
+                <Link to={"/services"}><button className="btn btn-accent">See All</button></Link>
 
             </div>
 

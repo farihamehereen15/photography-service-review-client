@@ -29,9 +29,12 @@ const CardDetails = () => {
             <Outlet></Outlet>
 
             <div>
-                <h1 className='text-5xl text-orange-600 text-center my-16 font-extrabold'>Form</h1>
+                <h1 className='text-5xl text-orange-600 text-center my-16 font-extrabold'>Your review</h1>
                 <form>
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+                    <input type="text" placeholder="Your Name" className="input input-bordered w-full my-5" />
+                    <input type="text" placeholder="Your photo URL" className="input input-bordered w-full my-5" />
+                    <input type="text" placeholder="Your review" className="input input-bordered w-full my-5" />
+                    <button className="btn btn-accent flex justify-center my-5">Submit</button>
                 </form>
             </div>
         </div>

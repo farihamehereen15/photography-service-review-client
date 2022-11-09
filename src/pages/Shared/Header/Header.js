@@ -16,6 +16,7 @@ const Header = () => {
                             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                                 <li><Link>Services</Link></li>
                                 <li><Link to={'/blog'}>Blog</Link></li>
+
                             </ul>
                         </div>
                         <img className='w-20' src="https://image.similarpng.com/very-thumbnail/2020/04/dslr-camera-logo-design-png.png" alt="" />
@@ -28,7 +29,9 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <button className="btn btn-outline btn-accent">LOG IN</button>
+                        <Link to={"/login"}> <button className="btn btn-outline btn-accent">LOG IN</button></Link>
+                        <Link > <button className="btn btn-outline btn-accent">Log Out</button></Link>
+
                     </div>
                 </div>
             </div>

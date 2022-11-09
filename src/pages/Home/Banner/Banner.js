@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from "../../../assets/banner/banner1.jpg"
 import img2 from "../../../assets/banner/banner2.jpg"
 import img3 from "../../../assets/banner/banner3.jpg"

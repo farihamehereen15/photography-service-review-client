@@ -1,23 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { FaGoogle } from 'react-icons/fa';
 
 const Login = () => {
+    const { login } = useContext(AuthContext);
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        login(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
+            .catch(err => console.error(err));
+    }
     return (
         <div>
-            <form>
+            <form onSubmit={handleLogin}>
                 <div className="hero min-h-screen bg-base-200">
-                    <div className="hero-content flex-col lg:flex-row-reverse">
-                        <div className="text-center lg:text-left">
+                    <div className="hero-content flex-col ">
+                        <div className="text-center ">
                             <h1 className="text-5xl font-bold">Login now!</h1>
 
                         </div>
-                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                        <div className="card w-full max-w-sm shadow-2xl bg-base-100">
                             <div className="card-body">
                                 <div className="form-control">
                                     <label className="label">
-                                        <span name="email" className="label-text">Email</span>
+                                        <span className="label-text">Email</span>
                                     </label>
-                                    <input type="text" placeholder="email" className="input input-bordered" />
+                                    <input type="text" name="email" placeholder="email" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
@@ -31,6 +47,9 @@ const Login = () => {
                                 </div>
                                 <div className="form-control mt-6">
                                     <button className="btn btn-primary">Login</button>
+                                </div>
+                                <div className="form-control mt-6">
+                                    <button className="btn btn-outline btn-primary"><span className='font-bold mr-2'><FaGoogle></FaGoogle> </span> Log In With Google</button>
                                 </div>
                             </div>
                         </div>

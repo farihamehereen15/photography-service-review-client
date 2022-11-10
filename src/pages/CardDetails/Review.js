@@ -6,10 +6,10 @@ const Review = () => {
 
     const review = useLoaderData()
     return (
-        <div>
+        <div className='my-10'>
 
             <h1 className='text-5xl text-orange-600 text-center my-16 font-extrabold'>Reviews</h1>
-            <div className="overflow-x-auto w-full">
+            <div className="overflow-x-auto w-full my-10">
                 <table className="table w-full">
 
                     <thead>

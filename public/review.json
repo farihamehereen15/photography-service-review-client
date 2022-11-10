@@ -3,6 +3,7 @@
         "service_id": "1",
         "service": "Wedding Photography",
         "name": "Gias Uddin",
+        "email": "giasuddin@gmail.com",
         "img": "https://bit.ly/3TvM8fS",
         "text": "i like this."
     },
@@ -10,6 +11,7 @@
         "service_id": "1",
         "service": "Wedding Photography",
         "name": "Sakir Ullah",
+        "email": "sakieullah@gmail.com",
         "img": "https://bit.ly/3TvM8fS",
         "text": "i like this work."
     },
@@ -17,6 +19,7 @@
         "service_id": "2",
         "service": "Sports Photography",
         "name": "Sakib Uddin",
+        "email": "sakibuddin@gmail.com",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPJzZzu9BM95wl32SeLiV4FysKvOW5Eqf8ACn-_N04Zu-MkLLpxuNS4YKKaIyb_jliKk&usqp=CAU",
         "text": "Excellent use of blur effect!"
     },
@@ -24,6 +27,7 @@
         "service_id": "2",
         "service": "Sports Photography",
         "name": "Rohim Uddin",
+        "email": "rohimsuddin@gmail.com",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEPJzZzu9BM95wl32SeLiV4FysKvOW5Eqf8ACn-_N04Zu-MkLLpxuNS4YKKaIyb_jliKk&usqp=CAU",
         "text": "Greattt!"
     },
@@ -31,6 +35,7 @@
         "service_id": "3",
         "service": "Wild Photography",
         "name": "Razan  Sarkar",
+        "email": "razansarkar@gmail.com",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPyEnVFfoMkUM0yT3nN_diRknSPTCJ5DCvQUH8KBXcRWRw7aM1TwQMemKFF_rN-uo2m8&usqp=CAU",
         "text": "Thats candid is finest!"
     },
@@ -38,6 +43,7 @@
         "service_id": "4",
         "service": "Fine-art Photography",
         "name": "Sama Saha",
+        "email": "samasaha@gmail.com",
         "img": "https://bit.ly/3DQS2Cl",
         "text": "Nice good god!"
     },
@@ -45,6 +51,7 @@
         "service_id": "5",
         "service": "Fasion Photography",
         "name": "Fariha Meher",
+        "email": "farihameher@gmail.com",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcH-1O1vJrO7JES9PymGvX2EBW942VbepT8u_KIg9_D4zpyRobQ9O-JYvCy5HjBzfz5xQ&usqp=CAU",
         "text": "Excelent work!"
     },
@@ -52,6 +59,7 @@
         "service_id": "6",
         "service": "Food Photography",
         "name": "Marjana Mila",
+        "email": "marjanamila@gmail.com",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJoRS_JbMND9t1ezoYjX05qdM4upzb-L98O1d1HgsGX_1yO9VQallZmdSOQ6EQzFnwak&usqp=CAU",
         "text": "Good but try hard"
     }

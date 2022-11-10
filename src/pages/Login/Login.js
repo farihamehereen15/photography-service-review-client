@@ -49,7 +49,7 @@ const Login = () => {
                                     <button className="btn btn-primary">Login</button>
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-outline btn-primary"><span className='font-bold mr-2'><FaGoogle></FaGoogle> </span> Log In With Google</button>
+                                    <button className="btn btn-outline btn-primary"><span className='font-bold mr-2 p-4'><FaGoogle></FaGoogle> </span> Log In With Google</button>
                                 </div>
                             </div>
                         </div>

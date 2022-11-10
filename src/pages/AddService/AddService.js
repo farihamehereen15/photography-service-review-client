@@ -52,7 +52,7 @@ const AddService = () => {
                     <input name="img" type="text" placeholder="Photo URL" className="input input-bordered w-full my-5" required />
 
 
-                    <textarea name="description" className="textarea textarea-bordered w-full" placeholder="your review"></textarea>
+                    <textarea name="description" className="textarea textarea-bordered w-full" placeholder="Your description"></textarea>
 
                     <div className='flex justify-center'><button className="btn btn-accent flex justify-center my-5">Submit</button></div>
 

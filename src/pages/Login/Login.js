@@ -1,17 +1,21 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
     const { login, googleProviderLogin } = useContext(AuthContext);
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from1 = location.state?.from1?.pathname || '/'
     const googleProvider = new GoogleAuthProvider()
     const googleLogin = () => {
         googleProviderLogin(googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log(user)
+                navigate(from1, { replace: true })
 
             })
             .catch(error => console.error(error))
@@ -28,6 +32,7 @@ const Login = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(from1, { replace: true })
             })
             .catch(err => console.error(err));
     }

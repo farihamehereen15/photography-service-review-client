@@ -8,6 +8,7 @@ import Login from "../../pages/Login/Login";
 import MyReview from "../../pages/MyReview/MyReview";
 import Services from "../../pages/Services/Services";
 import SignUp from "../../pages/SignUp/SignUp";
+import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -53,14 +54,14 @@ const router = createBrowserRouter([
             },
             {
                 path: '/service',
-                element: <AddService></AddService>
+                element: <PrivateRoute><AddService></AddService></PrivateRoute>
                 // loader: async () => {
                 //     return fetch("http://localhost:5000/services")
                 // }
             },
             {
                 path: '/myreview',
-                element: <MyReview></MyReview>
+                element: <PrivateRoute><MyReview></MyReview></PrivateRoute>
             }
 
 
